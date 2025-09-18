@@ -1,0 +1,7 @@
+tensorflow==2.12.0
+scikit-learn==1.2.2
+pandas==2.0.3
+numpy==1.23.5
+matplotlib==3.7.1
+gradio==3.41.2
+joblib==1.3.2
