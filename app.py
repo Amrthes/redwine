@@ -37,7 +37,7 @@ def predict_quality(fixed_acidity, volatile_acidity, citric_acid, residual_sugar
     input_scaled = scaler.transform(input_df)
 
     prediction = model.predict(input_scaled)
-    pred_class = int(np.argmax(prediction, axis=1)[0] + 3)  # shift to original class
+    pred_class = int(np.argmax(prediction, axis=1)[0] + 3)  
     pred_probs = prediction.flatten()
     
     quality_classes = [3, 4, 5, 6, 7, 8]
